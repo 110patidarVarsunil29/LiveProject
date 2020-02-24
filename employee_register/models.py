@@ -27,7 +27,7 @@ class Department(models.Model):
 
 class Employee(models.Model):
     fullname = models.CharField(max_length=100)
-    password = models.CharField(max_length=50, default='Welcome@1234')
+    password = models.CharField(max_length=50)
     empcode = models.CharField(max_length=15)
     mobile = models.CharField(max_length=15)
     email = models.CharField(max_length=30)
