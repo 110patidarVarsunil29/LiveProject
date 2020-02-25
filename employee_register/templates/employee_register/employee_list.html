@@ -3,9 +3,9 @@
 <table class="table table−borderless">
     <thead class="border−bottom font−weight−bold">
         <tr>
+            <td>Emp Code</td>
             <td>Full Name</td>
             <td>Mobile</td>
-            <td>Emp Code</td>
             <td>Email</td>
             <td>Manager</td>
             <td>Department</td>
@@ -22,9 +22,10 @@
     <tbody>
         {% for employee in employee_list %}
             <tr>
+                <td>{{employee.id}}</td>
                 <td>{{employee.fullname}}</td>
                 <td>{{employee.mobile}}</td>
-                <td>{{employee.empcode}}</td>
+                <!--<td>{{employee.empcode}}</td>-->
                 <td>{{employee.email}}</td>
                 <td>{{employee.manager}}</td>
                 <td>{{employee.department}}</td>

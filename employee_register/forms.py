@@ -12,7 +12,7 @@ class EmployeeForm(forms.ModelForm):
         labels = {
             'fullname': 'Full Name',
             'password': 'Password',
-            'empcode': 'Emp. Code',
+            #'empcode': 'Emp. Code',
             'mobile': 'Mobile',
             'email': 'Email',
             'manager': 'Manager',
@@ -28,7 +28,7 @@ class EmployeeForm(forms.ModelForm):
         self.fields['department'].empty_label = "Select"
         self.fields['manager'].empty_label = "Select"
         self.fields['password'].required = False
-        self.fields['empcode'].required = True
+        #self.fields['empcode'].required = True
         self.fields['email'].required = True
         self.fields['manager'].required = True
         self.fields['department'].required = True
