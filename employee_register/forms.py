@@ -33,3 +33,16 @@ class EmployeeForm(forms.ModelForm):
         self.fields['manager'].required = True
         self.fields['department'].required = True
         self.fields['date_of_joining'].required = True
+
+
+class LoginForm(forms.ModelForm):
+    class Meta:
+        model = Employee
+        fields = ['email', 'password']
+        widgets = {
+            'password': forms.PasswordInput(),
+        }
+        labels = {
+            'email': 'Email',
+            'password': 'Password',
+        }

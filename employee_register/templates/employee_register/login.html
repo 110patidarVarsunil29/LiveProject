@@ -1,0 +1,15 @@
+{% extends "employee_register/base.html" %}
+{% block content %}
+<h1>Login Page!</h1>
+<form class="site-form" action="{% url 'login' %}" method="post">
+    {%csrf_token%}
+    {{form}}
+    <input type="submit" value="Login">
+</form>
+
+<div>
+    {% for messages in messages %}
+    <h3>{{messages}}</h3>
+    {% endfor %}
+</div>
+{% endblock content %}
